@@ -15,8 +15,8 @@ header {
     color: #ffffff;
     text-align: center;
     padding: 5px;
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 5%;
 }
 
 #container {
@@ -24,11 +24,11 @@ header {
 }
 
 main {
-    width: 80%;
+    width: 90%;
     background-color: #ffffff;
     float: left;
     padding: 5px;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 footer {
@@ -52,21 +52,21 @@ nav {
 
 nav ul {
     list-style: none;
-  }
+}
 
 nav ul li {
     float: left;
-    padding: 5px;
+    padding: 8px;
 }
 
 nav ul li a:link,
 nav ul li a:visited {
     display: block;
-    width: 150px;
+    width: 175px;
     margin-right: 4px;
     color: #000000;
     padding: 2px 4px 2px 4px;
-    background-color: #ffffff;
+    background-color: #dfffff;
     text-decoration: none;
     text-align: center;
     border-radius: 10px;
@@ -78,68 +78,60 @@ nav ul li a:hover {
     border-radius: 15px;
 }
 
+/* table */
+
+table {
+    width: 100%;
+    background-color: #00ffff;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-weight: bold;
+    text-align: left;
+    font-size: 1em;
+    padding: 5px;
+}
+
+table th {
+    text-align: left;
+    border: 1px solid #000000;
+    padding: 5px;
+}
+
+table tr:hover {
+    background-color: #00f0ff
+}
+
+table td {
+    border: 1px solid #000000;
+    padding: 5px;
+}
+
 /* general classes */
 .boldtext {
     font-weight: bold;
 }
+
 .italictext {
     font-style: italic;
+}
+
+.smallertext {
+    font-size: smaller;
 }
 
 
 /* menu */
 
-#starters-id,
-#sandwiches-id,
-#pizza-id {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.menu-head-item {
-    width: 175px;
-    text-align: left;
-}
-.menu-head-price {
-    width: 250px;
-    text-align: left;
-}
-
-.pizza-head-size {
-    width: 175px;
-    text-align: left;
-}
-.pizza-head-price {
-    width: 115px;
-    text-align: left;
-}
-.pizza-head-ingredient {
-    width: 135px;
-}
-
-.menu caption {
-    font-weight: bold;  
-    text-align: left; 
-    font-size: 1em;
-    padding: 5px;
-}
-
-.menu {
-    background-color: #00FFFF;
-}
-
-.menu th,
-.menu td { 
-    border: 1px solid #000000;
-    background-color: #00FFFF;
-    padding: 5px;
+#pizza-id caption {
+    font-size:xx-large;
 }
 
 
 /* history */
 .history {
-    background-color: #D3D3D3;
+    background-color: #d3d3d3;
     padding: 15px;
 }
-
-
