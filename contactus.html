@@ -1,0 +1,122 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+    <title>Jerry's Pizza and Pub - Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style type="text/css">
+        form {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            color: #000000;
+            padding: 10px;
+        }
+
+        input,
+        textarea {
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            margin-bottom: 5px;
+            vertical-align: middle;
+        }
+
+        #id1 {
+            background-color: #30cfff;
+            border: 1px solid #000000;
+        }
+        #passcode {
+            color: #ff0000
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.jpg" alt="jerrys logo with name and beer" width="200" height="100">
+        <h1>Contact Jerry's Pizza and Pub</h1>
+    </header>
+
+    <nav>
+        <ul>
+
+            <li><a href="index.html">Home Page</a></li>
+
+            <li><a href="aboutus.html">About Us</a></li>
+
+            <li><a href="history.html">History</a></li>
+
+            <li><a href="menu.html">Menu</a></li>
+
+            <li><a href="contactus.html">Contact Us</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2>Contact Jerry's</h2>
+
+        <h2>Tell Us What You Think</h2>
+
+        <form action="" method="post" autocomplete="on">
+            <label for="firstname">First name:</label>
+            <input type="text" id="firstname" name="firstname" required>
+            <br>
+            <label for="lastname">Last name:</label>
+            <input type="text" id="lastname" name="lastname" required>
+            <br>
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email" autocomplete="off" required>
+            <br>
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <br>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="10" cols="40"></textarea>
+            <br>
+
+            <h2>Enter your four-digit passcode, then click OK:</h2>
+            <input id="id1" type="number" min="1000" max="9999">
+
+            <button type="button" onclick="myFunction()">OK</button>
+            <p id="passcode"></p>
+            <p>Note: The text field will test that the passcode entered
+                contains numeric digits only and that the passcode is four digits long.
+                It does not actually set a secure passcode.
+            </p>
+
+            <script>
+                function myFunction() {
+                    var inpObj = document.getElementById("id1");
+                    if (inpObj.checkValidity() == false) {
+                        document.getElementById("passcode").innerHTML = "Passcode is not valid";
+                    } else {
+                        document.getElementById("passcode").innerHTML = "Passcode is valid";
+                    }
+                }
+            </script>
+
+            <legend>What is the best way to contact you?</legend>
+            <input type="radio" id="byphone" name="contactby" value="Phone">
+            <label for="byphone">By Phone</label>
+            <br>
+            <input type="radio" id="byemail" name="contactby" value="Email">
+            <label for="byemail">By Email</label>
+
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>
