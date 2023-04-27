@@ -19,6 +19,7 @@
         textarea {
             background-color: #ffffff;
             border: 1px solid #cccccc;
+            border-radius: 4px;
             margin-bottom: 5px;
             vertical-align: middle;
         }
@@ -27,10 +28,10 @@
             background-color: #30cfff;
             border: 1px solid #000000;
         }
+
         #passcode {
             color: #ff0000
         }
-        
     </style>
 
 </head>
@@ -82,7 +83,7 @@
             <br>
 
             <h2>Enter your four-digit passcode, then click OK:</h2>
-            <input id="id1" type="number" min="1000" max="9999">
+            <input id="id1" name="id1" type="number" min="1000" max="9999">
 
             <button type="button" onclick="myFunction()">OK</button>
             <p id="passcode"></p>
