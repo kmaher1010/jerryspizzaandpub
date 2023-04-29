@@ -24,13 +24,20 @@
             vertical-align: middle;
         }
 
-        #id1 {
+        .highlightinput {
             background-color: #30cfff;
             border: 1px solid #000000;
         }
 
-        #passcode {
-            color: #ff0000
+        .highlightmessage {
+            color: #ff0000;
+        }
+
+        .secondaryhighlight {
+            padding: 5px;
+            background-color: #30cfff;
+            border: 1px solid #000000; 
+            border-radius: 14px;
         }
     </style>
 
@@ -83,10 +90,10 @@
             <br>
 
             <h2>Enter your four-digit passcode, then click OK:</h2>
-            <input id="id1" name="id1" type="number" min="1000" max="9999">
+            <input id="id1" name="id1" class="highlightinput" type="number" min="1000" max="9999">
 
             <button type="button" onclick="myFunction()">OK</button>
-            <p id="passcode"></p>
+            <p id="passcode" class="highlightmessage"></p>
             <p>Note: The text field will test that the passcode entered
                 contains numeric digits only and that the passcode is four digits long.
                 It does not actually set a secure passcode.
@@ -96,7 +103,7 @@
                 function myFunction() {
                     var inpObj = document.getElementById("id1");
                     if (inpObj.checkValidity() == false) {
-                        document.getElementById("passcode").innerHTML = "Passcode is not valid";
+                        document.getElementById("passcode").innerHTML = inpObj.validationMessage;
                     } else {
                         document.getElementById("passcode").innerHTML = "Passcode is valid";
                     }
@@ -109,7 +116,30 @@
             <br>
             <input type="radio" id="byemail" name="contactby" value="Email">
             <label for="byemail">By Email</label>
+            <br>
+            <br>
 
+            <legend>What is the best time to contact you?</legend>
+            <input type="checkbox" id="besttime-morning" class="secondaryhighlight" name="besttime-morning"
+                value="Morning">
+            <label for="besttime-morning">Morning</label>
+            <input type="checkbox" id="besttime-afternoon" class="secondaryhighlight" name="besttime-afternoon"
+                value="Afternoon">
+            <label for="besttime-afternoon">Afternoon</label>
+            <input type="checkbox" id="besttime-evening" class="secondaryhighlight" name="besttime-evening"
+                value="Evening">
+            <label for="besttime-evening"> Evening</label>
+            <br>
+            <br>
+            <label for="pizza">What is your favorite Pizza?</label>
+            <select name="pizza" id="pizza" class="secondaryhighlight">
+                <option value="thin" class="secondaryhighlight">Thin crust</option>
+                <option value="deepdish" class="secondaryhighlight">Deep Dish</option>
+                <option value="stuffed" class="secondaryhighlight">Stuffed</option>
+            </select>
+
+
+            <br>
             <br>
             <input type="submit" value="Submit">
         </form>
