@@ -24,21 +24,22 @@
             vertical-align: middle;
         }
 
-        .highlightinput {
+        input[type=number] {
             background-color: #30cfff;
             border: 1px solid #000000;
         }
 
-        .highlightmessage {
-            color: #ff0000;
-        }
-
-        .secondaryhighlight {
+        select {
             padding: 5px;
             background-color: #30cfff;
-            border: 1px solid #000000; 
-            border-radius: 14px;
+            border: 1px solid #000000;
+            border-radius: 14px;            
         }
+
+
+        .highlightmessage {
+            color: #ff0000;
+        }        
     </style>
 
 </head>
@@ -90,7 +91,7 @@
             <br>
 
             <h2>Enter your four-digit passcode, then click OK:</h2>
-            <input id="id1" name="id1" class="highlightinput" type="number" min="1000" max="9999">
+            <input id="id1" name="id1" type="number" min="1000" max="9999">
 
             <button type="button" onclick="myFunction()">OK</button>
             <p id="passcode" class="highlightmessage"></p>
@@ -120,22 +121,19 @@
             <br>
 
             <legend>What is the best time to contact you?</legend>
-            <input type="checkbox" id="besttime-morning" class="secondaryhighlight" name="besttime-morning"
-                value="Morning">
+            <input type="checkbox" id="besttime-morning"  name="besttime-morning" value="Morning">
             <label for="besttime-morning">Morning</label>
-            <input type="checkbox" id="besttime-afternoon" class="secondaryhighlight" name="besttime-afternoon"
-                value="Afternoon">
+            <input type="checkbox" id="besttime-afternoon"  name="besttime-afternoon" value="Afternoon">
             <label for="besttime-afternoon">Afternoon</label>
-            <input type="checkbox" id="besttime-evening" class="secondaryhighlight" name="besttime-evening"
-                value="Evening">
+            <input type="checkbox" id="besttime-evening"  name="besttime-evening" value="Evening">
             <label for="besttime-evening"> Evening</label>
             <br>
             <br>
             <label for="pizza">What is your favorite Pizza?</label>
-            <select name="pizza" id="pizza" class="secondaryhighlight">
-                <option value="thin" class="secondaryhighlight">Thin crust</option>
-                <option value="deepdish" class="secondaryhighlight">Deep Dish</option>
-                <option value="stuffed" class="secondaryhighlight">Stuffed</option>
+            <select name="pizza" id="pizza">
+                <option value="thin">Thin crust</option>
+                <option value="deepdish">Deep Dish</option>
+                <option value="stuffed">Stuffed</option>
             </select>
 
 
