@@ -33,7 +33,7 @@ main {
 
 footer {
     clear: both;
-    background-color: #000000;
+    background-color: #9b30ff;
     color: #ffffff;
     text-align: center;
     margin-left: 10%;
@@ -42,7 +42,25 @@ footer {
     width: 80%;
 }
 
-nav {
+footer nav {
+    background-color: #9b30ff;
+    color: #ffffff;  
+    font-size: .9em; 
+}
+
+footer nav a {
+    font-weight: normal; 
+    color: #ffffff;
+    font-size: .9em; 
+}
+
+footer nav span {
+    font-weight: normal; 
+    color: #ffffff;
+    font-size: .9em;
+}
+
+body nav {
     color: #000000;
     padding: 5px;
     width: 80%;
