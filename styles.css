@@ -42,20 +42,15 @@ footer {
     width: 80%;
 }
 
-footer nav {
-    background-color: #9b30ff;
-    color: #ffffff;  
-    font-size: .9em; 
-}
-
-footer nav a {
-    font-weight: normal; 
+footer p a {
+    font-weight: normal;
     color: #ffffff;
-    font-size: .9em; 
+    font-size: .9em;
 }
 
-footer nav span {
-    font-weight: normal; 
+footer ul li a:link,
+footer ul li a:visited {
+    background-color: #9b30ff;
     color: #ffffff;
     font-size: .9em;
 }
@@ -144,7 +139,7 @@ table td {
 /* menu */
 
 #pizza-id caption {
-    font-size:xx-large;
+    font-size: xx-large;
 }
 
 
